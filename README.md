@@ -1,76 +1,45 @@
-https://docs.google.com/document/u/0/d/112IhfjE82mrrh62y6Dx0xN4lY0ElcTEg8SFcab6FFj8/mobilebasic<header>
+# Fundamental Concepts of Version Control
 
+## What is Version Control?
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+Version control is a system that records changes to a file or set of files over time so that specific versions can be recalled later. It is commonly used in software development to manage code changes, but it can be used for any type of file on a computer.
 
-# Introduction to GitHub
+### Key Concepts of Version Control
 
-_Get started using GitHub in less than an hour._
+1. **Repositories**: A repository (or "repo") is a storage location for software packages. It often contains all of the project files and the entire history of changes to those files.
 
-</header>
+2. **Commits**: A commit is a record of what changes were made and who made them. Each commit has a unique identifier (usually a hash) and includes a message describing the changes.
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
+3. **Branches**: Branching allows you to diverge from the main line of development and continue to do work without messing with that main line. Once the work is complete, branches can be merged back into the main branch.
 
-## Step 1: Create a branch
+4. **Merging**: Merging is the process of combining changes from different branches. It is a fundamental part of collaboration in version control systems.
 
-_Welcome to "Introduction to GitHub"! :wave:_
+5. **Conflicts**: Conflicts occur when changes from different branches cannot be automatically merged. They must be resolved manually by the developers.
 
-**What is GitHub?**: GitHub is a collaboration platform that uses _[Git](https://docs.github.com/get-started/quickstart/github-glossary#git)_ for versioning. GitHub is a popular place to share and contribute to [open-source](https://docs.github.com/get-started/quickstart/github-glossary#open-source) software.
-<br>:tv: [Video: What is GitHub?](https://www.youtube.com/watch?v=pBy1zgt0XPc)
+6. **Tags**: Tags are used to mark specific points in history as being important. They are often used to mark release points (e.g., v1.0, v2.0).
 
-**What is a repository?**: A _[repository](https://docs.github.com/get-started/quickstart/github-glossary#repository)_ is a project containing files and folders. A repository tracks versions of files and folders. For more information, see "[About repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)" from GitHub Docs.
+## Why GitHub is a Popular Tool for Version Control
 
-**What is a branch?**: A _[branch](https://docs.github.com/en/get-started/quickstart/github-glossary#branch)_ is a parallel version of your repository. By default, your repository has one branch named `main` and it is considered to be the definitive branch. Creating additional branches allows you to copy the `main` branch of your repository and safely make any changes without disrupting the main project. Many people use branches to work on specific features without affecting any other parts of the project.
+GitHub is a web-based platform that uses Git, a distributed version control system. It is popular for several reasons:
 
-Branches allow you to separate your work from the `main` branch. In other words, everyone's work is safe while you contribute. For more information, see "[About branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)".
+1. **Collaboration**: GitHub makes it easy for multiple developers to work on the same project. Features like pull requests, code reviews, and issues facilitate collaboration.
 
-**What is a profile README?**: A _[profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)_ is essentially an "About me" section on your GitHub profile where you can share information about yourself with the community on GitHub.com. GitHub shows your profile README at the top of your profile page. For more information, see "[Managing your profile README](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)".
+2. **Social Coding**: GitHub has social features like following users, starring repositories, and forking projects. These features encourage collaboration and knowledge sharing.
 
-![profile-readme-example](/images/profile-readme-example.png)
+3. **Integration**: GitHub integrates with many other tools and services, such as CI/CD pipelines, project management tools, and various IDEs, making it a versatile tool for development workflows.
 
-### :keyboard: Activity: Your first branch
+4. **Documentation**: GitHub provides excellent documentation and a user-friendly interface, making it accessible to both beginners and experienced developers.
 
-1. Open a new browser tab and navigate to your newly made repository. Then, work on the steps in your second tab while you read the instructions in this tab.
-2. Navigate to the **< > Code** tab in the header menu of your repository.
+5. **Community**: GitHub hosts millions of open-source projects. This large community provides plenty of opportunities for learning, contributing, and finding collaborators.
 
-   ![code-tab](/images/code-tab.png)
+## How Version Control Maintains Project Integrity
 
-3. Click on the **main** branch drop-down.
+1. **History and Backup**: Every change is recorded, allowing developers to revert to previous versions if something goes wrong. This history acts as a backup and provides a safety net.
 
-   ![main-branch-dropdown](/images/main-branch-dropdown.png)
+2. **Collaboration**: Developers can work on different features or fixes in parallel without interfering with each other's work. This parallel development is managed through branches and merging.
 
-4. In the field, name your branch `my-first-branch`. In this case, the name must be `my-first-branch` to trigger the course workflow.
-5. Click **Create branch: my-first-branch** to create your branch.
+3. **Accountability**: Every change is attributed to a specific developer, providing a clear history of who did what. This accountability helps in understanding the evolution of the project and in tracking down the source of bugs.
 
-   ![create-branch-button](/images/create-branch-button.png)
+4. **Code Quality**: Features like pull requests and code reviews help maintain high code quality. Changes can be reviewed and discussed before they are merged into the main codebase.
 
-   The branch will automatically switch to the one you have just created.
-   The **main** branch drop-down bar will reflect your new branch and display the new branch name.
-
-6. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/introduction-to-github) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2024 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+5. **Conflict Resolution**: Version control systems help manage conflicts by alerting developers when changes cannot be automatically merged. This ensures that conflicting changes are resolved in a controlled manner ▋
